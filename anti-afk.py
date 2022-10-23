@@ -29,9 +29,9 @@ def windowsCallback(windowid, name):
 
 def main():
     global wowGuid,currentGuid
-    print("Loaded... watching for WoW window and sending kess presses when wow window active")
     wowTitle = "World of Warcraft"
     keys = ['a', 'd', 'space', 'alt+1', 'q']
+    print(f"Loaded with keylist:{keys}")
     nextKey=''
     while True:
         currentGuid=GetForegroundWindow()
