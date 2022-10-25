@@ -57,12 +57,11 @@ def main():
             
         if not nextKey and len(sequenceQueue)==0:
             keyOrSeq=random.randint(0, 1)
-        keyOrSeq=1 #Debug
         if keyOrSeq == 1 or len(sequenceQueue)>0:
+            waitLow=5
+            waitHigh=30
             print("playing sequence")
             if len(sequenceQueue)>0:
-                waitLow=5
-                waitHigh=30
                 k=sequenceQueue[0]
                 if len(sequenceQueue)>1:
                     sequenceQueue=sequenceQueue[1:]
